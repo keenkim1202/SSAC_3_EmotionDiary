@@ -67,8 +67,6 @@ class MainViewController: UIViewController {
   }
   
   // MARK: Action
-  
-  // 버튼 탭에 따른 액션
   @IBAction func onFine(_ sender: UIButton) {
     setLabel(fineLabel)
   }
