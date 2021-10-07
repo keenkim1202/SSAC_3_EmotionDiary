@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperTexture" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-VP-Zzz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="8XY-uj-IWM">
                                 <rect key="frame" x="30" y="241" width="354" height="424"/>
                                 <subviews>
@@ -34,8 +37,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bHk-VP-Zzz" secondAttribute="trailing" id="RDa-xV-3xf"/>
+                            <constraint firstItem="bHk-VP-Zzz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zks-zj-vMh"/>
                             <constraint firstItem="8XY-uj-IWM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dFk-5r-2Gf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bHk-VP-Zzz" secondAttribute="bottom" constant="-44" id="lcA-H4-YW2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8XY-uj-IWM" secondAttribute="trailing" constant="30" id="ohp-bO-n6I"/>
+                            <constraint firstItem="bHk-VP-Zzz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="wwf-jw-JRg"/>
                             <constraint firstItem="8XY-uj-IWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="y3m-EI-qbc"/>
                         </constraints>
                     </view>
@@ -47,6 +54,7 @@
     </scenes>
     <resources>
         <image name="icon" width="382" height="364"/>
+        <image name="paperTexture" width="810" height="987"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

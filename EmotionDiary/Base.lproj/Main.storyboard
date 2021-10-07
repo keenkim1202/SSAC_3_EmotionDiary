@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperTexture" translatesAutoresizingMaskIntoConstraints="NO" id="gUz-a0-HJ8">
+                                <rect key="frame" x="0.0" y="-2" width="414" height="908"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-re-ae6">
                                 <rect key="frame" x="50" y="295" width="314" height="360.5"/>
                                 <subviews>
@@ -262,9 +265,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUz-a0-HJ8" secondAttribute="trailing" id="3fr-J5-C7m"/>
+                            <constraint firstItem="gUz-a0-HJ8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-90" id="3w5-sF-Y7e"/>
                             <constraint firstItem="Wf2-re-ae6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-50" id="8Ts-Wt-OuO"/>
+                            <constraint firstItem="gUz-a0-HJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LAa-bZ-vSn"/>
                             <constraint firstItem="Wf2-re-ae6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="MSk-Sd-FEO"/>
                             <constraint firstItem="Wf2-re-ae6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="RRQ-i3-dDb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gUz-a0-HJ8" secondAttribute="bottom" constant="-44" id="wBX-5D-4BW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="감정일기" id="mDX-rJ-aSi">
@@ -365,6 +372,7 @@
         <image name="mono_slime7" width="278" height="258"/>
         <image name="mono_slime8" width="278" height="258"/>
         <image name="mono_slime9" width="278" height="258"/>
+        <image name="paperTexture" width="810" height="987"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
